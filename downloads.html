@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - Securicato</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" style="display: flex; align-items: center;">
+                    <img src="img/ssuricato.png" alt="" style="height: 50px;">
+                    Securi<span>cato</span>
+                </div>
+                <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="support.html">Suporte</a></li>
+                    <li><a href="plugins.html">Plugins</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Download da Plataforma</h2>
+                <p>Versão estável mais recente: <strong>v2.1.0</strong> - Lançada em 15/03/2025</p>
+                <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Securicato v2.1.0 (Docker + Source)</a>
+                <div style="margin-top: 2rem;">
+                    <h3>Versões anteriores</h3>
+                    <table class="version-table">
+                        <thead>
+                            <tr><th>Versão</th><th>Data</th><th>Destaques</th><th>Download</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>v2.0.0</td><td>10/01/2025</td><td>Dashboard de relatórios, novo fluxo de votação</td><td><a href="#">.tar.gz</a></td></tr>
+                            <tr><td>v1.5.0</td><td>05/09/2024</td><td>Suporte a anexos múltiplos, melhorias acessibilidade</td><td><a href="#">.tar.gz</a></td></tr>
+                            <tr><td>v1.0.0</td><td>02/03/2024</td><td>Primeira release estável</td><td><a href="#">.tar.gz</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3>Requisitos do Sistema</h3>
+                <ul style="background: white; padding: 1.5rem; border-radius: var(--radius);">
+                    <li>Python 3.10+ / Docker e Docker Compose</li>
+                    <li>MySQL 8.0 ou PostgreSQL 13+</li>
+                    <li>4GB RAM mínimo (recomendado 8GB)</li>
+                    <li>Sistemas operacionais: Linux (Ubuntu/Debian), Windows Server, macOS</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Como instalar (Docker)</h3>
+                <pre style="background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: var(--radius); overflow-x: auto;">
+git clone https://github.com/securicato/securicato-platform.git
+cd securicato-platform
+docker-compose up -d
+                </pre>
+                <p>Acesse <code>http://localhost:8000</code> e finalize a configuração via CLI.</p>
+                <p><a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Repositório no GitHub</a></p>
+            </section>
+
+            <section>
+                <h3>Changelogs</h3>
+                <ul>
+                    <li><strong>v2.1.0</strong> - Correção de segurança no envio de anexos; notificações por email aprimoradas.</li>
+                    <li><strong>v2.0.0</strong> - Nova interface acessível; gráficos dinâmicos; filtros avançados.</li>
+                    <li><strong>v1.5.0</strong> - Categoria "Abuso de poder" adicionada; otimização de consultas.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Securicato - Código Aberto</div>
+                <div class="footer-links">
+                    <a href="index.html">Início</a>
+                    <a href="downloads.html">Downloads</a>
+                    <a href="services.html">Serviços</a>
+                    <a href="support.html">Suporte</a>
+                    <a href="plugins.html">Plugins</a>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2025 Securicato. MIT License.</div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

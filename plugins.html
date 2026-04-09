@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins - Securicato</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" style="display: flex; align-items: center;">
+                    <img src="img/ssuricato.png" alt="" style="height: 50px;">
+                    Securi<span>cato</span>
+                </div>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="support.html">Suporte</a></li>
+                    <li><a href="plugins.html">Plugins</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Plugins e Extensões</h2>
+                <p>Amplie as funcionalidades da plataforma com plugins desenvolvidos pela comunidade e parceiros.</p>
+
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="integracao">Integração</button>
+                    <button class="filter-btn" data-filter="seguranca">Segurança</button>
+                    <button class="filter-btn" data-filter="relatorios">Relatórios</button>
+                </div>
+
+                <div class="grid-3" style="display: grid; gap: 1.5rem;">
+                    <div class="card plugin-card" data-category="integracao">
+                        <i class="fab fa-slack fa-2x"></i>
+                        <h3>Notificações Slack</h3>
+                        <p>Envia alertas automáticos para canais do Slack quando novas denúncias são registradas.</p>
+                        <span class="badge">Integração</span>
+                    </div>
+                    <div class="card plugin-card" data-category="seguranca">
+                        <i class="fas fa-fingerprint fa-2x"></i>
+                        <h3>MFA obrigatório</h3>
+                        <p>Autenticação de dois fatores para apuradores e administradores.</p>
+                        <span class="badge">Segurança</span>
+                    </div>
+                    <div class="card plugin-card" data-category="relatorios">
+                        <i class="fas fa-chart-pie fa-2x"></i>
+                        <h3>Exportação Avançada</h3>
+                        <p>Gera relatórios em PDF/Excel com gráficos personalizados.</p>
+                        <span class="badge">Relatórios</span>
+                    </div>
+                    <div class="card plugin-card" data-category="integracao">
+                        <i class="fab fa-microsoft fa-2x"></i>
+                        <h3>Azure AD Sync</h3>
+                        <p>Sincroniza colaboradores diretamente do Active Directory da Microsoft.</p>
+                        <span class="badge">Integração</span>
+                    </div>
+                    <div class="card plugin-card" data-category="seguranca">
+                        <i class="fas fa-shield-virus fa-2x"></i>
+                        <h3>Auditoria de Logs</h3>
+                        <p>Registro detalhado de todas as ações na plataforma.</p>
+                        <span class="badge">Segurança</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container"><div class="footer-content"><div class="footer-logo">Securicato</div><div class="footer-links"><a href="index.html">Início</a><a href="downloads.html">Downloads</a><a href="services.html">Serviços</a><a href="support.html">Suporte</a><a href="plugins.html">Plugins</a></div></div><div class="copyright">&copy; 2025 Securicato</div></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
